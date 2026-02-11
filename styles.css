@@ -1,0 +1,171 @@
+/* =======================
+   VARIABLES
+======================= */
+
+:root {
+  --primary: #00f7ff;
+  --secondary: #ff0000;
+  --dark: #06f522;
+  --glass: rgba(255, 255, 255, 0.08);
+}
+
+/* =======================
+   BODY GAMER
+======================= */
+
+body {
+  margin: 0;
+  font-family: 'Orbitron', sans-serif;
+  color: white;
+  background: linear-gradient(135deg, #0f0c29, #000000, #1a001f);
+  background-size: 400% 400%;
+  animation: bgMove 12s ease infinite;
+  cursor: crosshair;
+}
+
+@keyframes bgMove {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+
+/* =======================
+   NAVBAR
+======================= */
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px 50px;
+  position: fixed;
+  width: 100%;
+  backdrop-filter: blur(10px);
+  background: rgba(0,0,0,0.6);
+  border-bottom: 1px solid var(--primary);
+  transition: 0.4s;
+}
+
+/* =======================
+   CARDS GAMER
+======================= */
+
+.cards {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  padding: 120px 60px;
+  flex-wrap: wrap;
+}
+
+.card {
+  background: var(--glass);
+  backdrop-filter: blur(12px);
+  border-radius: 20px;
+  padding: 40px;
+  width: 250px;
+  text-align: center;
+  transition: all 0.5s cubic-bezier(.25,.8,.25,1);
+  border: 1px solid rgba(255,255,255,0.1);
+  box-shadow: 0 10px 25px rgba(0,0,0,0.3);
+}
+
+.card:hover {
+  transform: translateY(-10px) scale(1.05);
+  box-shadow: 0 0 25px var(--primary);
+}
+
+/* =======================
+   RGB BORDER EFFECT
+======================= */
+
+.card-gamer {
+  position: relative;
+  z-index: 1;
+}
+
+.card-gamer::before {
+  content: "";
+  position: absolute;
+  inset: -3px;
+  border-radius: 20px;
+  background: linear-gradient(
+    45deg,
+    red, blue, rgb(3, 255, 20), cyan, red
+  );
+  background-size: 400%;
+  z-index: -1;
+  animation: rgbBorder 5s linear infinite;
+}
+
+@keyframes rgbBorder {
+  0% { background-position: 0%; }
+  100% { background-position: 400%; }
+}
+
+/* =======================
+   BOTÓN GAMER
+======================= */
+
+.btn-primary {
+  padding: 12px 30px;
+  border-radius: 30px;
+  background: linear-gradient(45deg, #ff0000, #ff6600);
+  border: none;
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
+  transition: 0.4s;
+}
+
+.btn-primary:hover {
+  transform: scale(1.1);
+  box-shadow: 0 0 20px var(--secondary);
+}
+
+/* =======================
+   TEXTO NEON
+======================= */
+
+.neon-text {
+  font-size: 3rem;
+  color: var(--primary);
+  text-shadow:
+    0 0 5px var(--primary),
+    0 0 10px var(--primary),
+    0 0 20px var(--primary),
+    0 0 40px var(--primary);
+  animation: flicker 1.5s infinite alternate;
+}
+
+@keyframes flicker {
+  0% { opacity: 1; }
+  100% { opacity: 0.8; }
+}
+
+/* =======================
+   EFECTO FLOTANTE
+======================= */
+
+@keyframes float {
+  0%,100% { transform: translateY(0); }
+  50% { transform: translateY(-10px); }
+}
+
+.floating {
+  animation: float 3s ease-in-out infinite;
+}
+
+/* =======================
+   PARTÍCULAS CSS
+======================= */
+
+body::before {
+  content: "";
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  background-image: radial-gradient(var(--primary) 1px, transparent 1px);
+  background-size: 40px 40px;
+  opacity: 0.05;
+  z-index: -1;
+}
