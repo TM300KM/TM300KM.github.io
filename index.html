@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Kevin Josue Mejia Mejia | Software Engineer</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+<script src="https://cdn.jsdelivr.net/npm/particles.js"></script>
+
+<style>
+
+/* ====== GLOBAL ====== */
+
+body{
+    margin:0;
+    font-family:'Poppins', sans-serif;
+    background:#0a0a0f;
+    color:#e0e0e0;
+    overflow-x:hidden;
+}
+
+#particles-js{
+    position:fixed;
+    width:100%;
+    height:100%;
+    z-index:-1;
+}
+
+/* ====== HERO ====== */
+
+.hero{
+    text-align:center;
+    padding:80px 20px;
+    background:linear-gradient(135deg,#050720,#000000);
+    border-bottom:1px solid #111;
+}
+
+.hero h1{
+    font-family:'Orbitron',sans-serif;
+    font-size:3rem;
+    color:#00f7ff;
+    text-shadow:0 0 20px #00f7ff;
+}
+
+.contact p{
+    margin:8px 0;
+}
+
+.contact a{
+    color:#00f7ff;
+    text-decoration:none;
+}
+
+.contact a:hover{
+    color:#ff0000;
+}
+
+/* ====== SECTION ====== */
+
+.section{
+    padding:60px 10%;
+}
+
+.section h2{
+    font-family:'Orbitron',sans-serif;
+    color:#ff0000;
+    border-bottom:2px solid #00f7ff;
+    padding-bottom:10px;
+    margin-bottom:30px;
+}
+
+/* ====== CARDS ====== */
+
+.grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+    gap:30px;
+}
+
+.card{
+    background:#111;
+    padding:25px;
+    border-radius:15px;
+    border:1px solid #222;
+    transition:0.4s;
+}
+
+.card:hover{
+    transform:translateY(-10px);
+    box-shadow:0 0 25px #00f7ff;
+}
+
+.card img{
+    margin-top:15px;
+    border-radius:10px;
+    max-width:100%;
+}
+
+/* ====== LIST ====== */
+
+ul{
+    padding-left:20px;
+}
+
+footer{
+    text-align:center;
+    padding:30px;
+    background:#050505;
+    margin-top:60px;
+    border-top:1px solid #111;
+}
+
+</style>
+</head>
+
+<body>
+
+<div id="particles-js"></div>
+
+<!-- HERO -->
+<header class="hero">
+    <h1>Kevin Josue Mejia Mejia</h1>
+
+    <div class="contact">
+        <p><strong>Software Engineer | Full Stack Developer</strong></p>
+        <p>📧 <a href="mailto:kevinmejia7769@gmail.com">kevinmejia7769@gmail.com</a></p>
+        <p>📱 +52 722 181 7549</p>
+        <p>💻 <a href="https://github.com/TM300KM" target="_blank">github.com/TM300KM</a></p>
+        <p>🔗 <a href="https://www.linkedin.com/in/kevin-mejia-1558392aa" target="_blank">linkedin.com/in/kevin-mejia-1558392aa</a></p>
+        <p>🌍 Disponible para trabajo remoto internacional</p>
+    </div>
+</header>
+
+<!-- ABOUT -->
+<section class="section">
+<h2>Perfil Profesional</h2>
+<p>
+Soy un Ingeniero en Software apasionado por transformar ideas en soluciones tecnológicas reales. Disfruto diseñar y desarrollar aplicaciones web y móviles que combinan funcionalidad, rendimiento y una excelente experiencia de usuario.
+Me considero una persona curiosa, proactiva y orientada a resultados, con una mentalidad analítica y un fuerte compromiso por la calidad. Mi meta es seguir creciendo en el mundo del software, aportando innovación y valor a cada proyecto que emprendo.
+</p>
+</section>
+
+<!-- EXPERIENCE -->
+<section class="section">
+<h2>Experiencia & Proyectos Técnicos</h2>
+
+<div class="grid">
+
+<div class="card">
+<h3>Clon Google</h3>
+<p>Desarrollo Frontend con HTML, CSS y JavaScript replicando interfaz real.</p>
+<ul>
+<li>Maquetación profesional</li>
+<li>Responsive Design</li>
+<li>Buenas prácticas UI</li>
+</ul>
+<a href="https://github.com/TM300KM/Clon-Google" target="_blank">Ver Proyecto</a>
+</div>
+
+<div class="card">
+<h3>Reconocimiento Facial</h3>
+<p>Sistema de autenticación biométrica usando Python y OpenCV.</p>
+<ul>
+<li>Procesamiento de imágenes</li>
+<li>Interfaz con Tkinter</li>
+<li>Registro y validación facial</li>
+</ul>
+<a href="https://github.com/TM300KM/Reconocimiento-Facial" target="_blank">Ver Proyecto</a>
+</div>
+
+<div class="card">
+<h3>ChatBot Automatización</h3>
+<p>Bot automatizado para tareas repetitivas y lógica conversacional.</p>
+<ul>
+<li>Automatización inteligente</li>
+<li>Procesamiento de mensajes</li>
+<li>Optimización de tareas</li>
+</ul>
+<a href="https://github.com/TM300KM/chatbot-automatizacion" target="_blank">Ver Proyecto</a>
+</div>
+
+</div>
+</section>
+
+<!-- CERTIFICADOS -->
+<section class="section">
+<h2>Certificaciones</h2>
+
+<div class="grid">
+
+<div class="card">
+<h3>CISCO Python Essentials</h3>
+<p>Fundamentos sólidos en programación Python.</p>
+<img src="Certificados/python-essentials-1.1.png">
+<p>2025</p>
+</div>
+
+<div class="card">
+<h3>Microsoft GitHub Copilot con Python</h3>
+<p>Desarrollo asistido por IA.</p>
+<img src="Certificados/Captura de pantalla 2026-02-11 004145.png">
+<p>2025</p>
+</div>
+
+<div class="card">
+<h3>Microsoft Análisis de Datos</h3>
+<p>Exploración y visualización de datos con Python.</p>
+<img src="Certificados/Captura de pantalla 2026-02-11 004940.png">
+<p>2025</p>
+</div>
+
+</div>
+</section>
+
+<!-- SKILLS -->
+<section class="section">
+<h2>Habilidades Técnicas</h2>
+
+<ul>
+<li><strong>Lenguajes:</strong> Python, HTML, JavaScript, Java, C++, SQL</li>
+<li><strong>Frameworks:</strong> React, Node.js, Express, Django</li>
+<li><strong>Bases de Datos:</strong> PostgreSQL, MongoDB</li>
+<li><strong>DevOps:</strong> Docker, AWS, Git</li>
+<li><strong>IA & Data:</strong> TensorFlow, OpenCV, Automatización</li>
+</ul>
+</section>
+
+<!-- LANGUAGES -->
+<section class="section">
+<h2>Idiomas</h2>
+<ul>
+<li>Español – Nativo</li>
+<li>Inglés – Técnico</li>
+</ul>
+</section>
+
+<footer>
+© 2026 Kevin Josue Mejia Mejia | Software Engineer
+</footer>
+
+<script>
+particlesJS("particles-js",{
+  particles:{
+    number:{value:60},
+    size:{value:3},
+    move:{speed:1.5},
+    line_linked:{enable:true,color:"#00f7ff"}
+  }
+});
+</script>
+
+</body>
+</html>
